@@ -10,8 +10,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<platform.version> 4.1.1.4
-					</platform.version>
+		<platform.version>4.1.1.4</platform.version>
 		<android.plugin.version>3.5.3</android.plugin.version>
 	</properties>
 
@@ -30,6 +29,7 @@
 	</dependencies>
 
 	<build>
+		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
