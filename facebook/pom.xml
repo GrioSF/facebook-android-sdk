@@ -11,8 +11,21 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<platform.version>4.1.1.4</platform.version>
-		<android.plugin.version>3.5.3</android.plugin.version>
+		<android.plugin.version>3.6.0</android.plugin.version>
 	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>grio-nexus</id>
+			<url>http://nexus.grio.com/nexus/content/repositories/thirdparty</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
