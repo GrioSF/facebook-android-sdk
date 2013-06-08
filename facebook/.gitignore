@@ -3,3 +3,6 @@ target/
 .project
 .settings/
 
+/target
+/target
+/target

@@ -12,8 +12,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<platform.version>17</platform.version>
 		<platform.level>17</platform.level>
-        <jvm.version>1.6</jvm.version>
+        <android.support-v4.library.version>r13</android.support-v4.library.version>
+		<jvm.version>1.6</jvm.version>
 		<android.plugin.version>3.6.0</android.plugin.version>
+        <maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
 	</properties>
 
 	<distributionManagement>
@@ -37,7 +39,7 @@
         <dependency>
             <groupId>com.google.android</groupId>
             <artifactId>support-v4</artifactId>
-            <version>r13</version>
+            <version>${android.support-v4.library.version}</version>
         </dependency>
 	</dependencies>
 
@@ -55,6 +57,19 @@
 					</sdk>
 				</configuration>
 			</plugin>
+	
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <inherited>true</inherited>
+                <configuration>
+                    <source>${jvm.version}</source>
+                    <target>${jvm.version}</target>
+                </configuration>
+            </plugin>
+			
 		</plugins>
 	</build>
+	
 </project>
