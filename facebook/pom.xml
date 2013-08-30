@@ -7,6 +7,9 @@
 	<version>3.0.1</version>
 	<packaging>apklib</packaging>
 	<name>facebook-android-sdk</name>
+    <prerequisites>
+        <maven>3.0.3</maven>
+    </prerequisites>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,7 +17,7 @@
 		<platform.level>17</platform.level>
         <android.support-v4.library.version>r13</android.support-v4.library.version>
 		<jvm.version>1.6</jvm.version>
-		<android.plugin.version>3.6.0</android.plugin.version>
+		<android.plugin.version>3.6.1</android.plugin.version>
         <maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
 	</properties>
 
